@@ -1,23 +1,15 @@
 import { useEffect } from 'react';
 import './App.css';
-
-console.log(
-  '🚀 ~ file: App.tsx:4 ~ window.Telegram.WebApp;:',
-  window.Telegram.WebApp,
-);
-
-const tg = window.Telegram.WebApp;
+import { useTelegram } from './hooks/useTelegram';
 
 function App() {
+  const { tg, onToggleButton } = useTelegram();
+
   useEffect(() => {
     tg.ready();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const onClose = () => {
-    tg.close();
-  };
-
-  return <button onClick={onClose}>Close</button>;
+  return <button onClick={onToggleButton}>Close</button>;
 }
 
 export default App;
