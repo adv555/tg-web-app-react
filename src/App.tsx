@@ -9,7 +9,7 @@ function App() {
     tg.ready();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  return <button onClick={onToggleButton}>Close</button>;
+  return <button onClick={onToggleButton}>Toggle</button>;
 }
 
 export default App;
