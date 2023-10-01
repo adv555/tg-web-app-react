@@ -1,14 +1,14 @@
 .button {
   padding: 10px 15px;
-  background: var(--tg-theme-button-color);
+  /* background: var(--tg-theme-button-color); */
+  background: #da6bb4;
   color: var(--tg-theme-button-text-color);
-  /* border: none; */
-  border: 1px solid var(--tg-theme-button-border-color);
-  border-radius: 8px;
+  border: none;
+  border-radius: 15px;
   outline: none;
   cursor: pointer;
 }
 
-/* .button:hover {
-  background: var(--tg-theme-button-hover-color);
-} */
+.button:hover {
+  background: #da6bb4;
+}
