@@ -16,7 +16,7 @@ const Form: React.FC = () => {
     };
 
     tg.sendData(JSON.stringify(data));
-  }, []);
+  }, [email, name, sex]); // eslint-disable-line
 
   useEffect(() => {
     tg.onEvent('mainButtonClicked', onSendData);
