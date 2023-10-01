@@ -65,7 +65,7 @@ const ProductList: React.FC = () => {
     };
 
     // Vite
-    fetch(`${import.meta.env.VITE_API_URL}/checkout`, {
+    fetch(`${import.meta.env.VITE_API_URL}/web-data`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
