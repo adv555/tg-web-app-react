@@ -34,9 +34,9 @@ const Form: React.FC = () => {
 
   useEffect(() => {
     if (!name || !email) {
-      tg.MainButton.hide();
+      tg.MainButton.disable();
     } else {
-      tg.MainButton.show();
+      tg.MainButton.enable();
     }
   }, [name, email]); // eslint-disable-line
 
@@ -55,7 +55,7 @@ const Form: React.FC = () => {
       <h3>Form</h3>
 
       <form className="form">
-        {/* <label htmlFor="name">Name</label> */}
+        <label htmlFor="name">Name</label>
         <input
           className="input"
           id="name"
@@ -65,7 +65,7 @@ const Form: React.FC = () => {
           placeholder='e.g. "John Doe"'
         />
 
-        {/* <label htmlFor="email">Email</label> */}
+        <label htmlFor="email">Email</label>
         <input
           className="input"
           type="email"
@@ -75,15 +75,13 @@ const Form: React.FC = () => {
           placeholder="e.g. jondoe@gmail.com"
         />
 
-        <select className="select" value={sex} onChange={onChangeSex}>
+        <select className={'select'} value={sex} onChange={onChangeSex}>
           <option value={'female'}>Female</option>
-          <option value={'mail'}>Mail</option>
+          <option value={'male'}>Male</option>
         </select>
 
         {/* <label htmlFor="message">Message</label>
         <textarea name="message" id="message" cols={30} rows={10}></textarea> */}
-
-        {/* <button type="submit">Send</button> */}
       </form>
     </div>
   );
