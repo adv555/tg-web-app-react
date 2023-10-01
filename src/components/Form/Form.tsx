@@ -34,9 +34,9 @@ const Form: React.FC = () => {
 
   useEffect(() => {
     if (!name || !email) {
-      tg.MainButton.disable();
+      tg.MainButton.hide();
     } else {
-      tg.MainButton.enable();
+      tg.MainButton.show();
     }
   }, [name, email]); // eslint-disable-line
 
