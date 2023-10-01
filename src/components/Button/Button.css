@@ -3,8 +3,12 @@
   background: var(--tg-theme-button-color);
   color: var(--tg-theme-button-text-color);
   /* border: none; */
-  border: 1px solid red;
+  border: 1px solid var(--tg-theme-button-border-color);
   border-radius: 8px;
   outline: none;
   cursor: pointer;
 }
+
+/* .button:hover {
+  background: var(--tg-theme-button-hover-color);
+} */
