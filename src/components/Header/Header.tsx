@@ -8,7 +8,7 @@ const Header: React.FC = () => {
 
   return (
     <div className="header">
-      <Button onClick={onClose}>Close</Button>
+      <Button onClick={onClose}>X</Button>
       <span className="username">{user?.username}</span>
     </div>
   );
