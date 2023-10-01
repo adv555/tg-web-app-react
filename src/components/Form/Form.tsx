@@ -57,7 +57,7 @@ const Form: React.FC = () => {
           placeholder="e.g. jondoe@gmail.com"
         />
 
-        <select className="select" value={sex} onChange={(e) => onChangeSex}>
+        <select className="select" value={sex} onChange={onChangeSex}>
           <option value={'female'}>Female</option>
           <option value={'mail'}>Mail</option>
         </select>
