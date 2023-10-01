@@ -24,7 +24,7 @@ const Form: React.FC = () => {
     return () => {
       tg.offEvent('mainButtonClicked', onSendData);
     };
-  }, []);
+  }, [onSendData]); // eslint-disable-line
 
   useEffect(() => {
     tg.MainButton.setParams({
