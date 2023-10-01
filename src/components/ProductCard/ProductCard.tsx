@@ -16,7 +16,11 @@ const ProductCard: React.FC<Props> = ({ product, className, onAdd }) => {
 
   return (
     <div className={'product ' + className}>
-      <div className="img" />
+      <img
+        className="img"
+        src="https://res.cloudinary.com/myfinance/image/upload/v1693416024/syncwave//img/phones/apple-iphone-xs-max/gold/00.png"
+      />
+      {/* <div className="img" /> */}
       <div className="title">{product.title}</div>
       <div className="description">{product.description}</div>
       <div className="price">{product.price}$</div>
