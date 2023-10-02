@@ -73,7 +73,7 @@ const ProductList: React.FC = () => {
     };
 
     // Vite
-    console.log('URL', 'import.meta.env.VITE_API_URL/web-data');
+    console.log('URL', `${import.meta.env.VITE_API_URL}/web-data`);
 
     fetch(`${import.meta.env.VITE_API_URL}/web-data`, {
       method: 'POST',
@@ -82,7 +82,7 @@ const ProductList: React.FC = () => {
       },
       body: JSON.stringify(data),
     });
-  }, []); // eslint-disable-line
+  }, [cart]);
 
   useEffect(() => {
     tg.onEvent('mainButtonClicked', onSendData);
