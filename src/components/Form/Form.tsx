@@ -51,28 +51,34 @@ const Form: React.FC = () => {
   };
 
   return (
-    <div className="form">
+    <div className='form'>
       <h3>Form</h3>
 
-      <form className="form">
-        <label htmlFor="name">Name</label>
+      <form className='form'>
+        {/* <label htmlFor="name">Name</label> */}
+        <label htmlFor='name' className='label'>
+          Name
+        </label>
         <input
-          className="input"
-          id="name"
-          type="text"
+          className='input'
+          id='name'
+          type='text'
           value={name}
           onChange={onChangeName}
           placeholder='e.g. "John Doe"'
         />
 
-        <label htmlFor="email">Email</label>
+        {/* <label htmlFor='email'>Email</label> */}
+        <label htmlFor='email' className='label'>
+          Name
+        </label>
         <input
-          className="input"
-          type="email"
-          id="email"
+          className='input'
+          type='email'
+          id='email'
           value={email}
           onChange={onChangeEmail}
-          placeholder="e.g. jondoe@gmail.com"
+          placeholder='e.g. jondoe@gmail.com'
         />
 
         <select className={'select'} value={sex} onChange={onChangeSex}>

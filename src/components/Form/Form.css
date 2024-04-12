@@ -1,17 +1,41 @@
 .form {
   display: flex;
   flex-direction: column;
+  max-width: 400px;
   width: 100%;
   padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Сучасний шрифт */
 }
 
-.input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 15px;
+.label {
+  font-size: 16px; /* Збільшений розмір шрифту */
+  font-weight: bold; /* Жирний шрифт */
+  margin-bottom: 5px; /* Відступ знизу */
+  color: #333; /* Темний колір тексту */
 }
 
+.input,
 .select {
+  width: calc(100% - 20px);
   padding: 10px;
-  margin-top: 15px;
+  margin-top: 5px; /* Зменшений відступ зверху */
+  margin-bottom: 20px; /* Збільшений відступ знизу */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s; /* Плавний перехід для кольору рамки */
+}
+
+.input:focus,
+.select:focus {
+  border-color: #007bff; /* Зміна кольору рамки при фокусі */
+}
+
+/* Адаптивність */
+@media (max-width: 600px) {
+  .input,
+  .select {
+    width: 100%;
+  }
 }

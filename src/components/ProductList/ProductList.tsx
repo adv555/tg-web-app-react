@@ -73,7 +73,7 @@ const ProductList: React.FC = () => {
     };
 
     // Vite
-    console.log('URL', `${import.meta.env.VITE_API_URL}/web-data`);
+    console.log('URL', import.meta.env.VITE_API_URL + '/web-data');
 
     fetch(`${import.meta.env.VITE_API_URL}/web-data`, {
       method: 'POST',
